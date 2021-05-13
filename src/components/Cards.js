@@ -1,7 +1,8 @@
 import React from 'react';
 import CardItem from './CardItem'
 import './Cards.css';
-
+import Image1 from './Images/image-1.png';
+import Image2 from './Images/image-2.png';
 
 function Cards() {
     return (
@@ -11,15 +12,17 @@ function Cards() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem 
-                        src= "./community1.jpg"
+                        src={Image1}
                         text="Share what's on your mind with the community"
+                        label='Share feeling'
                         path='/services'
-                        label='Share feeling'/>
+                        />
                         <CardItem
-                        src="./community2.jpg" 
+                        src={Image2} 
                         text="Share what are you doing with the community"
                         path='/services'
-                        label='Share feeling'/>
+                        label='Share feeling'
+                        />
                     </ul>
                 </div>
             </div>
@@ -27,4 +30,4 @@ function Cards() {
     )
 }
 
-export default Cards
+export default Cards;
